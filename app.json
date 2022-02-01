@@ -1,0 +1,73 @@
+{
+    "name": "Millie",
+      "description": "Lightweight WhatsApp Bot",
+      "repository": "https://github.com/neera-j/Millie-x0",
+      "logo": "https://github.com/neera-j/Wizard-Ser/blob/master/Millie/millie.jpg",
+      "keywords": ["bot", "whatsapp", "whatsapp-bot"],
+      "env": {
+        "LANGUAGE":             {
+            "description": "Bot language. Azerice => az, English => en, Türkçe => tr, Malayalam => ml, Hindi => HI, Indonesia => ID, Español => ES, Portuguese => pt, Russian => ru",
+            "required": true
+        },
+        "BLOCK_CHAT":           {
+            "description": "Choose in which chat the bot won't work there. Ex: 905xxxx && 905xxxx-1xxx or 905xxxx,905xxx...",
+            "required": true,
+            "value" : "false"
+        },
+        "NO_LOG":               {
+            "description": "Set true if you don't want to see error log.",
+            "required": true,
+            "value" : "false"
+        },    
+        "WORK_TYPE":            {
+            "description": "Mode of Bot - public / private ",
+            "required": true,
+            "value" : ""
+        },
+
+        "HEROKU_API_KEY":       {
+            "description": "Heroku API Key.",
+            "required": true,
+            "value" : ""
+        },
+        "HEROKU_APP_NAME":      {
+            "description": "Heroku APP name.",
+            "required": true,
+            "value" : ""
+        },
+        "HEROKU":               {
+            "description": "If it is running in Heroku, type true.",
+            "required": true,
+            "value": "true"
+        }
+    
+    },    
+        
+        "addons": [{
+            "plan": "heroku-postgresql"
+          }],
+    
+        "buildpacks": [{
+    
+                "url": "heroku/nodejs"
+        },
+
+    {
+
+                "url": "heroku-community/apt"
+
+     },
+                       
+    {
+    
+                "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    
+                       
+    {
+                "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
+         }
+    
+        ]
+    }
+    
