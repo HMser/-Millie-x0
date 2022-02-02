@@ -14,20 +14,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neera-j/Millie-x0.git"
+    "url": "git+https://github.com/Ajmal-Achu/Wizard-Ser.git"
   },
   "keywords": [
-    "whatsapp-bot",
-    "bot"
+    "whatsapp-bot"
   ],
   "author": "Neeraj",
-  "developer": "Neeraj / @D-E-V-I-L-8",
-  "license": "GPL-3.0-or-later",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/neera-j/Millie-x0/issues"
+    "url": "https://github.com/neera-j/Wizard-Ser/issues"
   },
-  "homepage": "https://github.com/neera-j/Millie-x0",
+  "homepage": "https://github.com/neera-j/Wizard-Ser",
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.2",
     "awesome-phonenumber": "^2.54.0",
@@ -71,7 +68,6 @@
     "node-tesseract-ocr": "^2.2.1",
     "xmldom": "^0.6.0",
     "yargs": "^17.0.1",
-    "yt-search": "^2.9.0",
-    "raganork-bot": "1.4.2"   
+    "yt-search": "^2.9.0"
   }
 }
