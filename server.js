@@ -15,6 +15,10 @@ function connect(conn, PORT) {
     conn.on('qr', qr => {
         _qr = qr
     })
+app.use(async (req, res) => {
+        res.setHeader('content-type', 'image/png')
+        res.end(await toBuffer(_qr))
+    })
     
     let server = app.listen(PORT, () => console.log('App listened on port', PORT))
     let io = SocketIO(server)
